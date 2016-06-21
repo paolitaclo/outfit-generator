@@ -1,0 +1,7 @@
+#outfit-result {
+  display: none;
+}
+
+#outfit-result.visible {
+  display: block;
+}
