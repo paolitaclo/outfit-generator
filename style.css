@@ -1,0 +1,31 @@
+#outfit-result {
+  display: none;
+}
+
+#outfit-result.visible {
+  display: block;
+}
+
+#create-topAndTee {
+  display: none;
+}
+
+#create-topAndTee.visible {
+  display: block;
+}
+
+#create-bottom {
+  display: none;
+}
+
+#create-bottom.visible {
+  display: block;
+}
+
+#create-shoes {
+  display: none;
+}
+
+#create-shoes.visible {
+  display: block;
+}
