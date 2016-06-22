@@ -8,11 +8,7 @@ function onFindClothes() {
   var resultElement = document.getElementById('outfit-result');
   resultElement.className += "visible";
   
-//  document.getElementById('display-topsAndTees').innerHTML ='The ' + outfit.topsAndTees.color + ' ' + outfit.topsAndTees.brand + ' ' + outfit.topsAndTees.model; 
-//  
-//  document.getElementById('display-bottoms').innerHTML = 'The ' + outfit.bottoms.color + ' ' + outfit.bottoms.brand + ' ' + outfit.bottoms.model;
-//  
-//  document.getElementById('display-shoes').innerHTML = 'The ' + outfit.shoes.color + ' ' + outfit.shoes.brand + ' ' + outfit.shoes.model;
+
   showOutfitPiece (outfit.topsAndTees, "display-topsAndTees");
   showOutfitPiece (outfit.bottoms, "display-bottoms");
   showOutfitPiece (outfit.shoes, "display-shoes");
@@ -71,3 +67,9 @@ function findRandomMatch (category, criteria) {
   var number = Math.floor(Math.random()*allMatches.length);
   return allMatches[number];
 }
+
+
+
+
+
+

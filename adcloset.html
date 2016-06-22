@@ -2,16 +2,31 @@
   
   <head>
     <title>CREATE YOUR CLOSET</title>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
     <h1>WELCOME!</h1>
     
     <h2>Let's create your closet</h2>
-    <h2>TOPS AND TEES</h2>
     
-    <form id="create-closet">
-      
+    <h3>Select a category.</h3>
+    
+    <select name="3-categories" id="category" onchange="showCategoryForm()">
+      <option value="0" selected>-</option>
+      <option value="1">Tops and Tees</option>
+      <option value="2">Bottoms</option>
+      <option value="3">Shoes</option>
+    </select><br>
+    
+    
+    
+    
+    
+    
+    
+    <form id="create-topAndTee">
+      <h2>TOPS AND TEES</h2>
       <label>Type of Apparel</label><br>
       <select name="model">
         <option value="1" selected>Tank Top</option>
@@ -22,6 +37,7 @@
         <option value="6">Dress Shirt</option>
         <option value="7">Polo Shirt</option>
       </select><br>
+     
       
       <label>Color: </label><br>
       <input type="text" id="color" name="color_item"><br>
@@ -52,22 +68,37 @@
       <input type="checkbox" id="night_event" value="night_event" name="style"><label for="night_event">For a night event</label><br>
       <input type="checkbox" id="formal_event" value="formal_event" name="style"><label for="formal_event">For a formal event</label><br>
     
-
-
-
-
-
-
-
-
-      
-      
-      
     </form>
     
+    <form id="create-bottom">
+      <h2>BOTTOMS</h2>
+      <label>Type of Apparel</label><br>
+      <select name="model">
+        <option value="1" selected>Tank Top</option>
+        <option value="2">Cami</option>
+        <option value="3">Blouse</option>
+        <option value="4">T-Shirt</option>
+        <option value="5">Shirt</option>
+        <option value="6">Dress Shirt</option>
+        <option value="7">Polo Shirt</option>
+      </select><br>
+    </form>
     
-    
-    
+    <form id="create-shoes">
+      <h2>SHOES</h2>
+      <label>Type of Apparel</label><br>
+      <select name="model">
+        <option value="1" selected>Tank Top</option>
+        <option value="2">Cami</option>
+        <option value="3">Blouse</option>
+        <option value="4">T-Shirt</option>
+        <option value="5">Shirt</option>
+        <option value="6">Dress Shirt</option>
+        <option value="7">Polo Shirt</option>
+      </select><br>
+    </form>
+
+    <script type="text/javascript" src="form.js"></script>
   </body>
   
 </html>
