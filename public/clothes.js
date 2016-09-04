@@ -4,7 +4,7 @@ var CLOTHES = {
       color: "baby pink",
       brand: "Old Navy",
       design: "solid",
-      howFit: "tight", 
+      howFit: "tight",
       model: "tank-top",
       style: ["regular-day", "for-home", "work"],
       typeOfSleeves: "sleeveless"
@@ -22,7 +22,7 @@ var CLOTHES = {
       color: "pastel yellow",
       brand: "Old Navy",
       design: "solid",
-      howFit: "tight", 
+      howFit: "tight",
       model: "tank-top",
       style: ["regular-day", "for-home"],
       typeOfSleeves: "sleeveless"
@@ -31,7 +31,7 @@ var CLOTHES = {
       color: "black",
       brand: "Old Navy",
       design: "solid",
-      howFit: "tight", 
+      howFit: "tight",
       model: "tank-top",
       style: ["regular-day", "for-home"],
       typeOfSleeves: "sleeveless"
@@ -49,7 +49,7 @@ var CLOTHES = {
       color: "nude",
       brand: "Forever 21",
       design: "solid",
-      howFit: "tight", 
+      howFit: "tight",
       model: "cami",
       style: ["regular-day", "for-home"],
       typeOfSleeves: "sleeveless"
@@ -249,7 +249,7 @@ var CLOTHES = {
       design: "with square in green and brown",
       howFit: "relaxed",
       model: "shirt",
-      style: ["work", "formal-event" "night-event"],
+      style: ["work", "formal-event", "night-event"],
       typeOfSleeves: "long-sleeve"
     },
     29: {
@@ -288,7 +288,7 @@ var CLOTHES = {
       style: ["work", "formal-event"],
       typeOfSleeves: "long-sleeve"
     }
-    
+
   },
   bottoms: {
     1: {
