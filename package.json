@@ -1,0 +1,27 @@
+{
+  "name": "outfit-generator",
+  "version": "1.0.0",
+  "description": "generate  an outfit for every day, add new clothes to my closet ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paolitaclo/outfit-generator.git"
+  },
+  "author": "Paola Claros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paolitaclo/outfit-generator/issues"
+  },
+  "homepage": "https://github.com/paolitaclo/outfit-generator#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.4.0",
+    "eslint-config-google": "^0.6.0"
+  }
+}
