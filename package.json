@@ -20,6 +20,8 @@
   "dependencies": {
     "express": "^4.14.0"
   },
+  "eslintConfig": {
+  },
   "devDependencies": {
     "eslint": "^3.4.0",
     "eslint-config-google": "^0.6.0"
