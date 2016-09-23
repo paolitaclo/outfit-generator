@@ -1,0 +1,74 @@
+[
+  {
+    "color": "camel",
+    "brand": "M & K",
+    "design": "solid",
+    "howFit": "relaxed",
+    "model": "dress-pant",
+    "style": ["night-event", "formal-event", "work"]
+  },
+  {
+    "color": "black",
+    "brand": "M & K",
+    "design": "solid",
+    "howFit": "relaxed",
+    "model": "dress-pant",
+    "style": ["night-event", "formal-event", "work"]
+  },
+  {
+    "color": "navy blue",
+    "brand": "M & K",
+    "design": "solid",
+    "howFit": "relaxed",
+    "model": "dress-pant",
+    "style": ["night-event", "formal-event", "work"]
+  },
+  {
+    "color": "light blue",
+    "brand": "Indigo Rein",
+    "design": "solid",
+    "howFit": "tight",
+    "model": "jeans",
+    "style": ["daylight-event", "regular-day", "work"]
+  },
+  {
+    "color": "navy blue",
+    "brand": "Old Navy",
+    "design": "printed",
+    "howFit": "relaxed",
+    "model": "skirt",
+    "style": ["daylight-event", "regular-day", "work"]
+  },
+  {
+    "color": "black",
+    "brand": "Old Navy",
+    "design": "printed with white dots",
+    "howFit": "relaxed",
+    "model": "skirt",
+    "style": ["daylight-event", "regular-day", "work"]
+  },
+  {
+    "color": "dark brown",
+    "brand": "H&M",
+    "design": "printed with flowers",
+    "howFit": "relaxed",
+    "model": "skirt",
+    "style": ["daylight-event", "regular-day"]
+  },
+  {
+    "color": "brown",
+    "brand": "Mistral",
+    "design": "solid",
+    "howFit": "tight",
+    "model": "leggings",
+    "style": ["daylight-event", "regular-day", "for-home"]
+  },
+  {
+    "color": "dark gray",
+    "brand": "Mistral",
+    "design": "solid",
+    "howFit": "tight",
+    "model": "leggings",
+    "style": ["daylight-event", "regular-day", "for-home"]
+  }
+]

@@ -6,7 +6,7 @@ var addClothes = (function() {
   var lastCategorySelected;
 
   function showCategoryForm() {
-    if (lastCategorySelected !== undefined){
+    if (lastCategorySelected !== undefined) {
       toggleCategory(lastCategorySelected, false);
     }
     var obj = {
@@ -23,7 +23,7 @@ var addClothes = (function() {
   }
 
   function toggleCategory(idElement, show) {
-    var categorySelected = document.getElementById(idElement);;
+    var categorySelected = document.getElementById(idElement);
     if (show) {
       categorySelected.className += "visible";
     } else {
@@ -35,10 +35,10 @@ var addClothes = (function() {
   function getFormData(formId) {
     var formEl = document.getElementById(lastCategorySelected);
 
-    function styleChecked(){
+    function styleChecked() {
       var checkboxes = formEl.style;
       var selected = [];
-      for (var i = 0; i<checkboxes.length; i++) {
+      for (var i = 0; i < checkboxes.length; i++) {
         if (checkboxes[i].checked) {
           selected.push(checkboxes[i].value);
         }
