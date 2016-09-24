@@ -2,17 +2,17 @@
   <head>
     <title>PROJECT PAO</title>
     <link rel="stylesheet" href="style.css">
-    
-    
+
+
   </head>
   <body>
     <h1>WELCOME!</h1>
 
-    
+
     <form id="find-clothes">
       <label for="find-clothes__temperature">Temperature</label>
       <input id="find-clothes__temperature" name="temperature" type="text" value="70"/><br>
-      
+
       <label>Style:</label><br>
       <input type="radio" id="regular-day" value="regular-day" name= "style"><label for="regular-day">Regular Day</label><br>
       <input type="radio" id="for-home" value="regular-day" name= "style"><label for="for-home">For Home</label><br>
@@ -20,10 +20,10 @@
       <input type="radio" id="night-event" value="night-event" name= "style"><label for="night-event">Night Event</label><br>
       <input type="radio" id="work" value="work" name= "style"><label for="work">Work</label><br>
       <input type="radio" id="formal-event" value="formal-event" name= "style"><label for="formal-event">Formal Event</label><br>
-      
-      <input type="button" value="Find Clothes" onclick="onFindClothes()" /> 
+
+      <input id="findClothesBtn" type="button" value="Find Clothes" />
     </form>
-    
+
     <div id="outfit-result">
       <p>Your outfit for today is:</p>
       <ul>
@@ -32,9 +32,13 @@
         <li id='display-shoes'></li>
       </ul>
     </div>
-    
-    
-    <script type="text/javascript" src="clothes.js"></script>
-    <script type="text/javascript" src="main.js"></script>
+
+
+    <script src="node_modules/systemjs/dist/system.js"></script>
+
+    <script src="config.js"></script>
+    <script>
+	    System.import("main.js");
+    </script>
   </body>
 </html>

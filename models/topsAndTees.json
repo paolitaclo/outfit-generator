@@ -1,0 +1,291 @@
+[
+  {
+    "color": "baby pink",
+    "brand": "Old Navy",
+    "design": "solid",
+    "howFit": "tight",
+    "model": "tank-top",
+    "style": ["regular-day", "for-home", "work"],
+    "typeOfSleeves": "sleeveless"
+  },
+  {
+    "color": "red",
+    "brand": "Old Navy",
+    "design": "solid",
+    "howFit": "tight",
+    "model": "tank-top",
+    "style": ["regular-day", "for-home"],
+    "typeOfSleeves": "sleeveless"
+  },
+  {
+    "color": "pastel yellow",
+    "brand": "Old Navy",
+    "design": "solid",
+    "howFit": "tight",
+    "model": "tank-top",
+    "style": ["regular-day", "for-home"],
+    "typeOfSleeves": "sleeveless"
+  },
+  {
+    "color": "black",
+    "brand": "Old Navy",
+    "design": "solid",
+    "howFit": "tight",
+    "model": "tank-top",
+    "style": ["regular-day", "for-home"],
+    "typeOfSleeves": "sleeveless"
+  },
+  {
+    "color": "black",
+    "brand": "Forever 21",
+    "design": "solid",
+    "howFit": "tight",
+    "model": "cami",
+    "style": ["regular-day", "for-home"],
+    "typeOfSleeves": "sleeveless"
+  },
+  {
+    "color": "nude",
+    "brand": "Forever 21",
+    "design": "solid",
+    "howFit": "tight",
+    "model": "cami",
+    "style": ["regular-day", "for-home"],
+    "typeOfSleeves": "sleeveless"
+  },
+  {
+    "color": "white",
+    "brand": "Old Navy",
+    "design": "graphic",
+    "howFit": "racerback",
+    "model": "tank-top",
+    "style": ["for-home"],
+    "typeOfSleeves": "sleeveless"
+  },
+  {
+    "color": "gray",
+    "brand": "Nike",
+    "design": "graphic",
+    "howFit": "racerback",
+    "model": "tank-top",
+    "style": ["regular-day"],
+    "typeOfSleeves": "sleeveless"
+  },
+  {
+    "color": "pastel yellow",
+    "brand": "Red Botton",
+    "design": "lace",
+    "howFit": "relaxed",
+    "model": "tank-top",
+    "style": ["regular-day"],
+    "typeOfSleeves": "sleeveless"
+  },
+  {
+    "color": "baby blue",
+    "brand": "Mango",
+    "design": "printed",
+    "howFit": "relaxed",
+    "model": "shirt",
+    "style": ["regular-day", "daylight-event", "work"],
+    "typeOfSleeves": "sleeveless"
+  },
+  {
+    "color": "black",
+    "brand": "Mistral",
+    "design": "solid",
+    "howFit": "relaxed",
+    "model": "polo-shirt",
+    "style": ["regular-day"],
+    "typeOfSleeves": "short-sleeve"
+  },
+  {
+    "color": "red",
+    "brand": "Mistral",
+    "design": "solid",
+    "howFit": "relaxed",
+    "model": "polo-shirt",
+    "style": ["regular-day", "work"],
+    "typeOfSleeves": "short-sleeve"
+  },
+  {
+    "color": "blue-jean",
+    "brand": "Mistral",
+    "design": "solid",
+    "howFit": "relaxed",
+    "model": "polo-shirt",
+    "style": ["regular-day", "work"],
+    "typeOfSleeves": "short-sleeve"
+  },
+  {
+    "color": "black",
+    "brand": "Aeropostale",
+    "design": "printed with white hearts",
+    "howFit": "relaxed",
+    "model": "t-shirt",
+    "style": ["regular-day", "night-event"],
+    "typeOfSleeves": "long-sleeve"
+  },
+  {
+    "color": "coral",
+    "brand": "Aeropostale",
+    "design": "graphic",
+    "howFit": "tight",
+    "model": "t-shirt",
+    "style": ["regular-day", "daylight-event", "for-home"],
+    "typeOfSleeves": "long-sleeve"
+  },
+  {
+    "color": "turquoise",
+    "brand": "Aeropostale",
+    "design": "graphic",
+    "howFit": "tight",
+    "model": "t-shirt",
+    "style": ["regular-day", "daylight-event", "for-home"],
+    "typeOfSleeves": "long-sleeve"
+  },
+  {
+    "color": "navy blue",
+    "brand": "American Eagle",
+    "design": "graphic",
+    "howFit": "relaxed",
+    "model": "t-shirt",
+    "style": ["regular-day", "daylight-event", "for-home", "night-event"],
+    "typeOfSleeves": "long-sleeve"
+  },
+  {
+    "color": "red",
+    "brand": "American Eagle",
+    "design": "graphic",
+    "howFit": "relaxed",
+    "model": "t-shirt",
+    "style": ["regular-day", "daylight-event", "for-home", "night-event"],
+    "typeOfSleeves": "long-sleeve"
+  },
+  {
+    "color": "baby pink",
+    "brand": "Hering",
+    "design": "solid",
+    "howFit": "tight",
+    "model": "t-shirt",
+    "style": ["regular-day", "daylight-event", "for-home", "night-event"],
+    "typeOfSleeves": "long-sleeve"
+  },
+  {
+    "color": "electric blue",
+    "brand": "Hering",
+    "design": "solid",
+    "howFit": "tight",
+    "model": "t-shirt",
+    "style": ["regular-day", "daylight-event", "for-home", "night-event"],
+    "typeOfSleeves": "long-sleeve"
+  },
+  {
+    "color": "brown",
+    "brand": "Hering",
+    "design": "solid",
+    "howFit": "tight",
+    "model": "t-shirt",
+    "style": ["regular-day", "daylight-event", "for-home", "night-event"],
+    "typeOfSleeves": "long-sleeve"
+  },
+  {
+    "color": "black",
+    "brand": "Hering",
+    "design": "solid",
+    "howFit": "tight",
+    "model": "t-shirt",
+    "style": ["regular-day", "daylight-event", "for-home", "night-event"],
+    "typeOfSleeves": "long-sleeve"
+  },
+  {
+    "color": "purple",
+    "brand": "Atletha",
+    "design": "solid",
+    "howFit": "tight",
+    "model": "t-shirt",
+    "style": ["regular-day", "daylight-event", "for-home", "night-event"],
+    "typeOfSleeves": "3/4-sleeve"
+  },
+  {
+    "color": "white",
+    "brand": "Express",
+    "design": "melon striped",
+    "howFit": "relaxed",
+    "model": "t-shirt",
+    "style": ["regular-day", "daylight-event", "for-home", "night-event"],
+    "typeOfSleeves": "long-sleeve"
+  },
+  {
+    "color": "purple",
+    "brand": "New York & Company",
+    "design": "with with lines",
+    "howFit": "relaxed",
+    "model": "dresss-shirt",
+    "style": ["work", "formal-event"],
+    "typeOfSleeves": "long-sleeve"
+  },
+  {
+    "color": "black",
+    "brand": "Banana Republic",
+    "design": "solid",
+    "howFit": "tight",
+    "model": "dress-shirt",
+    "style": ["work", "formal-event"],
+    "typeOfSleeves": "long-sleeve"
+  },
+  {
+    "color": "baby pink",
+    "brand": "Banana Republic",
+    "design": "solid",
+    "howFit": "tight",
+    "model": "dress-shirt",
+    "style": ["work", "formal-event"],
+    "typeOfSleeves": "long-sleeve"
+  },
+  {
+    "color": "black",
+    "brand": "Per Se",
+    "design": "with square in green and brown",
+    "howFit": "relaxed",
+    "model": "shirt",
+    "style": ["work", "formal-event", "night-event"],
+    "typeOfSleeves": "long-sleeve"
+  },
+  {
+    "color": "turquoise",
+    "brand": "Papaya",
+    "design": "solid",
+    "howFit": "relaxed",
+    "model": "dress-shirt",
+    "style": ["work", "formal-event"],
+    "typeOfSleeves": "long-sleeve"
+  },
+  {
+    "color": "pink",
+    "brand": "A&M",
+    "design": "solid",
+    "howFit": "relaxed",
+    "model": "blouse",
+    "style": ["work", "daylight-event"],
+    "typeOfSleeves": "short-sleeve"
+  },
+  {
+    "color": "electric blue",
+    "brand": "A&M",
+    "design": "solid",
+    "howFit": "relaxed",
+    "model": "blouse",
+    "style": ["work", "daylight-event"],
+    "typeOfSleeves": "short-sleeve"
+  },
+  {
+    "color": "navy blue",
+    "brand": "Mango",
+    "design": "printed with white",
+    "howFit": "relaxed",
+    "model": "dress-shirt",
+    "style": ["work", "formal-event"],
+    "typeOfSleeves": "long-sleeve"
+  }
+
+]

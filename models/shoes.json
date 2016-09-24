@@ -1,0 +1,74 @@
+[
+  {
+    "color": "black",
+    "brand": "Havaianas",
+    "design": "solid with gold",
+    "heels": "no-heels",
+    "model": "sandals",
+    "style": ["daylight-event", "for-home", "work", "regular-day"]
+  },
+  {
+    "color": "melon",
+    "brand": "Azaleia",
+    "design": "solid",
+    "heels": "no-heels",
+    "model": "sandals",
+    "style": ["daylight-event", "for-home", "work", "regular-day"]
+  },
+  {
+    "color": "yellow",
+    "brand": "Azaleia",
+    "design": "solid",
+    "heels": "no heels",
+    "model": "sandals",
+    "style": ["daylight-event", "for-home", "work", "regular-day"]
+  },
+  {
+    "color": "Cornflower Blue",
+    "brand": "Azaleia",
+    "design": "solid",
+    "heels": "no heels",
+    "model": "sandals",
+    "style": ["daylight-event", "for-home", "work", "regular-day"]
+  },
+  {
+    "color": "blue jeans",
+    "brand": "Puma",
+    "design": "solid",
+    "heels": "no-heels",
+    "model": "sneakers",
+    "style": ["daylight-event", "regular-day", "night-event"]
+  },
+  {
+    "color": "brown",
+    "brand": "dontknow",
+    "design": "solid",
+    "heels": "no-heels",
+    "model": "boots",
+    "style": ["daylight-event", "regular-day", "night-event"]
+  },
+  {
+    "color": "black",
+    "brand": "dontknow",
+    "design": "solid",
+    "heels": "no-heels",
+    "model": "boots",
+    "style": ["daylight-event", "regular-day", "night-event"]
+  },
+  {
+    "color": "melon",
+    "brand": "Azaleia",
+    "design": "solid",
+    "heels": "high-heels",
+    "model": "platform-pump",
+    "style": ["formal-event"]
+  },
+  {
+    "color": "black",
+    "brand": "Azaleia",
+    "design": "solid",
+    "heels": "high-heels",
+    "model": "wedge-sandals",
+    "style": ["daylight-event", "regular-event", "night-event", "work"]
+  }
+]
