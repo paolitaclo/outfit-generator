@@ -6,8 +6,8 @@ System.import("jquery").then(function($) {
     var criteria = getFormData();
     $.post('/outfit', {criteria: criteria})
     .then(function(outfit) {
-      var resultElement = document.getElementById('outfit-result');
-      resultElement.className += "visible";
+      var resultElement = $('#outfit-result');
+      resultElement.addClass('visible');
 
       showOutfitPiece(outfit.topsAndTees, "display-topsAndTees");
       showOutfitPiece(outfit.bottoms, "display-bottoms");
@@ -17,18 +17,17 @@ System.import("jquery").then(function($) {
 
   function showOutfitPiece (outfitProperty, id) {
     if (outfitProperty === undefined) {
-      document.getElementById(id).innerHTML =
-      "We didn't find any item that matches your requirements.";
+      $('#' + id).html("We didn't find any item that matches your requirements.");
     } else {
-      document.getElementById(id).innerHTML = 'The ' + outfitProperty.color +
-      ' ' + outfitProperty.brand + ' ' + outfitProperty.model;
+      $('#' + id).html('The ' + outfitProperty.color +
+      ' ' + outfitProperty.brand + ' ' + outfitProperty.model);
     }
   }
 
   function getFormData() {
-    var formEl = document.getElementById('find-clothes');
-    var temperature = formEl.temperature.value;
-    var style = formEl.style.value;
+    var formEl = $('#find-clothes');
+    var temperature = formEl.find('input[name="temperature"]').val();
+    var style = formEl.find('input[name="style"]').val();
     var formData = {
       temperature: parseFloat(temperature),
       style: style
