@@ -67,6 +67,21 @@ function matchesCriteria (item, criteria) {
   return false;
 }
 
+function saveClothes(db, clothes) {
+  var collectionName = clothes.type;
+  delete clothes.type;
+  return new Promise(function(resolve, reject) {
+    db.collection(collectionName).insertOne(clothes, function(err, result) {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(result);
+      }
+    });
+  });
+}
+
 module.exports = {
-  findOutfit: findClothes
+  findOutfit: findClothes,
+  saveClothes: saveClothes
 };

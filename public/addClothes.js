@@ -1,17 +1,4 @@
-// Module Pattern
-// https://toddmotto.com/mastering-the-module-pattern/
-// https://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript
-// http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html
-
 System.import("jquery").then(function($) {
-  $('button').on('click', function() {
-    getFormData();
-  });
-
-  $('#category').on('change', function() {
-    showCategoryForm();
-  });
-
   var lastCategorySelected;
 
   function showCategoryForm() {
@@ -40,9 +27,12 @@ System.import("jquery").then(function($) {
 
   function showValues() {
     var str = $('#' + lastCategorySelected).serialize();
-    console.log(str);
+    $.post('/newClothes', str)
+    .then(function(value){
+      return str;
+    });
+    // console.log(str);
   }
-  $("input[type='button']").on("click", showValues);
 
   function getFormData(formId) {
     var formEl = $('#' + lastCategorySelected);
@@ -66,8 +56,13 @@ System.import("jquery").then(function($) {
     }
     return formData;
   }
-  // Self invoking anonymous function
-  // https://sarfraznawaz.wordpress.com/2012/01/26/javascript-self-invoking-functions/
-  // http://stackoverflow.com/questions/592396/what-is-the-purpose-of-a-self-executing-function-in-javascript
 
+  $("input[type='button']").on("click", showValues);
+  // $('button').on('click', function() {
+  //   getFormData();
+  // });
+
+  $('#category').on('change', function() {
+    showCategoryForm();
+  });
 });
