@@ -81,7 +81,20 @@ function saveClothes(db, clothes) {
   });
 }
 
+function showClothesList(db, type){
+  return new Promise(function(resolve, reject){
+    db.collection(type).find().toArray(function(err, docs){
+      if(err) {
+        reject(err);
+      } else {
+        resolve(docs);
+      }
+    });
+  });
+}
+
 module.exports = {
   findOutfit: findClothes,
-  saveClothes: saveClothes
+  saveClothes: saveClothes,
+  showClothesList: showClothesList
 };
