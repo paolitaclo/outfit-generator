@@ -1,8 +1,4 @@
-// Module Pattern
-// https://toddmotto.com/mastering-the-module-pattern/
-// https://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript
-// http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html
-var addClothes = (function() {
+System.import("jquery").then(function($) {
   var lastCategorySelected;
 
   function showCategoryForm() {
@@ -14,8 +10,8 @@ var addClothes = (function() {
       2: "create-bottom",
       3: "create-shoes"
     };
-    var selectTag = document.getElementById("category");
-    var selectedValue = selectTag.options[selectTag.selectedIndex].value;
+    var selectTag = $("#category");
+    var selectedValue = selectTag.val();
 
     var newCategorySelected = obj[selectedValue];
     toggleCategory(newCategorySelected, true);
@@ -23,71 +19,50 @@ var addClothes = (function() {
   }
 
   function toggleCategory(idElement, show) {
-    var categorySelected = document.getElementById(idElement);
-    if (show) {
-      categorySelected.className += "visible";
-    } else {
-      categorySelected.className = "";
-    }
+    var categorySelected = $('#' + idElement);
+    categorySelected.toggleClass('visible', show);
   }
 
-  //todo: FIX
-  function getFormData(formId) {
-    var formEl = document.getElementById(lastCategorySelected);
+  // todo: FIX
 
-    function styleChecked() {
-      var checkboxes = formEl.style;
-      var selected = [];
-      for (var i = 0; i < checkboxes.length; i++) {
-        if (checkboxes[i].checked) {
-          selected.push(checkboxes[i].value);
-        }
-      }
-      return selected;
-    }
+  function showValues() {
+    var str = $('#' + lastCategorySelected).serialize();
+    $.post('/clothes', str)
+    .then(function(value){
+      return str;
+    });
+    // console.log(str);
+  }
+
+  function getFormData(formId) {
+    var formEl = $('#' + lastCategorySelected);
 
     var formData = {
-      model: formEl.model.value,
-      color: formEl.color.value,
-      design: formEl.design.value,
-      brand: formEl.brand.value,
-      style: styleChecked()
-//      sleeveType: formEl.sleeveType.value,
-//      fit: formEl.fit.value,
-
+      model: formEl.find('[name="model"]').val(),
+      color: formEl.find('[name="color"]').val(),
+      design: formEl.find('[name="design"]').val(),
+      brand: formEl.find('[name="brand"]').val(),
+      style: formEl.find('[name="style"]').val()
     };
 
-     //(formEl.sleeveType.value.toString){
-    //typeof(formEl.sleeveType.value) === "string"
-
-
-//      var possibleKeys = ["sleeveType", "fit", "heels"];
-//      for(var i = 0; i<possibleKeys.length; i++) {
-//        if (formEl.possibleKeys[i] !== undefined) {
-//          formData.possibleKeys[i] = formEl.possibleKeys[i].value;
-//        }
-//      }
-
-
-    if (formEl.sleeveType !== undefined) {
-      formData["sleeveType"] = formEl.sleeveType.value;
+    if (formEl[0].sleeveType !== undefined) {
+      formData["sleeveType"] = formEl[0].sleeveType.value;
     }
-    if (formEl.fit !== undefined) {
-      formData["fit"] = formEl.fit.value;
+    if (formEl[0].fit !== undefined) {
+      formData["fit"] = formEl[0].fit.value;
     }
-    if (formEl.heels !== undefined) {
-      formData["heels"] = formEl.heels.value;
+    if (formEl[0].heels !== undefined) {
+      formData["heels"] = formEl[0].heels.value;
     }
-
-
     return formData;
   }
 
-  return {
-    showCategoryForm: showCategoryForm,
-    getFormData: getFormData
-  };
-})();
-// Self invoking anonymous function
-// https://sarfraznawaz.wordpress.com/2012/01/26/javascript-self-invoking-functions/
-// http://stackoverflow.com/questions/592396/what-is-the-purpose-of-a-self-executing-function-in-javascript
+  $("input[type='button']").on("click", showValues);
+  // $('button').on('click', function() {
+  //   getFormData();
+  // });
+
+  $('#category').on('change', function() {
+    showCategoryForm();
+  });
+});

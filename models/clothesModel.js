@@ -67,6 +67,34 @@ function matchesCriteria (item, criteria) {
   return false;
 }
 
+function saveClothes(db, clothes) {
+  var collectionName = clothes.type;
+  delete clothes.type;
+  return new Promise(function(resolve, reject) {
+    db.collection(collectionName).insertOne(clothes, function(err, result) {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(result);
+      }
+    });
+  });
+}
+
+function showClothesList(db, type){
+  return new Promise(function(resolve, reject){
+    db.collection(type).find().toArray(function(err, docs){
+      if(err) {
+        reject(err);
+      } else {
+        resolve(docs);
+      }
+    });
+  });
+}
+
 module.exports = {
-  findOutfit: findClothes
+  findOutfit: findClothes,
+  saveClothes: saveClothes,
+  showClothesList: showClothesList
 };

@@ -1,5 +1,5 @@
 <html>
-  
+
   <head>
     <title>CREATE YOUR CLOSET</title>
     <link rel="stylesheet" href="style.css">
@@ -7,77 +7,78 @@
 
   <body>
     <h1>WELCOME!</h1>
-    
+
     <h2>Let's create your closet</h2>
-    
+
     <h3>Select a category.</h3>
-    
-    <select name="3-categories" id="category" onchange="addClothes.showCategoryForm()">
+
+    <select name="3-categories" id="category">
       <option value="0" selected>-</option>
       <option value="1">Tops and Tees</option>
       <option value="2">Bottoms</option>
       <option value="3">Shoes</option>
     </select><br>
-    
-     
+
     <form id="create-topAndTee">
       <h2>TOPS AND TEES</h2>
       <label>Type of Apparel</label><br>
+      <input type="hidden" name="type" value="topsAndTees" />
       <select name="model" id="modelTopTee">
-        <option value="1" selected>Tank Top</option>
-        <option value="2">Cami</option>
-        <option value="3">Blouse</option>
-        <option value="4">T-Shirt</option>
-        <option value="5">Shirt</option>
-        <option value="6">Dress Shirt</option>
-        <option value="7">Polo Shirt</option>
+        <option value="tank-top" selected>Tank Top</option>
+        <option value="cami">Cami</option>
+        <option value="blouse">Blouse</option>
+        <option value="t-shirt">T-Shirt</option>
+        <option value="shirt">Shirt</option>
+        <option value="dress-shirt">Dress Shirt</option>
+        <option value="polo-shirt">Polo Shirt</option>
       </select><br>
-      
+
       <label>Color: </label><br>
       <input type="color" name="color"><br>
-      
+
       <label>What type of pattern does it have?</label><br>
       <input type="text" name="design"><br>
-      
+
       <label>Brand: </label><br>
-      <input type="text" name="brand" value=""><br> 
-      
+      <input type="text" name="brand" value=""><br>
+
       <label>Type of Sleeve:</label><br>
       <input type="radio" value="sleeveless" name="sleeveType"><label>Sleeveless</label><br>
       <input type="radio" value="short-sleeve" name="sleeveType"><label>Short Sleeve</label><br>
       <input type="radio" value="3/4-sleeve" name="sleeveType"><label>3/4 Sleeve</label><br>
       <input type="radio" value="long-sleeve" name="sleeveType"><label>Long Sleeve</label><br>
       <br>
-      
+
       <label>How does it fit on you?</label><br>
       <input type="radio" value="tight" name="fit"><label>Tight</label><br>
       <input type="radio" value="relaxed" name="fit"><label>Relaxed</label><br>
       <input type="radio" value="racerback" name="fit"><label>Like a Racerback</label><br>
       <br>
       <label>When would you wear it?</label><br>
-      <input type="checkbox"value="home" name="style"><label>At home</label><br>
+      <input type="checkbox" value="home" name="style"><label>At home</label><br>
       <input type="checkbox" value="work" name="style"><label>At work</label><br>
       <input type="checkbox" value="regular-day" name="style"><label>Regular day</label><br>
       <input type="checkbox" value="daylight-event" name="style"><label>For a daylight event</label><br>
       <input type="checkbox" value="night-event" name="style"><label>For a night event</label><br>
       <input type="checkbox" value="formal-event" name="style"><label>For a formal event</label><br>
-      
-      <input type="button" value="Save your Apparel" onclick="addClothes.getFormData()" /> 
-      
+
+      <input type="button" value="Save your Apparel" />
+
     </form>
-    
+
     <form id="create-bottom">
       <h2>BOTTOMS</h2>
       <label>Type of Apparel</label><br>
+      <input type="hidden" name="type" value="bottoms" />
       <select name="model" id="modelBottom">
-        <option value="1" selected>Dress Pant</option>
-        <option value="2">Jeans</option>
-        <option value="3">Skirt</option>
-        <option value="4">Leggings</option>
-        <option value="5">Dress Shorts</option>
-        <option value="6">Shorts</option>
+        <option value="dress-pant" selected>Dress Pant</option>
+        <option value="jeans">Jeans</option>
+        <option value="skirt">Skirt</option>
+        <option value="leggings">Leggings</option>
+        <option value="dress-shorts">Dress Shorts</option>
+        <option value="shorts">Shorts</option>
       </select><br>
-      
+
       <label>Color: </label><br>
       <input type="color" name="color"><br>
 
@@ -85,12 +86,12 @@
       <input type="text" name="design"><br>
 
       <label>Brand: </label><br>
-      <input type="text" name="brand"><br> 
-      
+      <input type="text" name="brand"><br>
+
       <label>How does it fit on you?</label><br>
       <input type="radio" value="tight" name="fit"><label>Tight</label><br>
       <input type="radio" value="relaxed" name="fit"><label>Relaxed</label><br>
-      
+
       <label>When would you wear it?</label><br>
       <input type="checkbox"value="home" name="style"><label>At home</label><br>
       <input type="checkbox" value="work" name="style"><label>At work</label><br>
@@ -98,36 +99,37 @@
       <input type="checkbox" value="daylight-event" name="style"><label>For a daylight event</label><br>
       <input type="checkbox" value="night-event" name="style"><label>For a night event</label><br>
       <input type="checkbox" value="formal-event" name="style"><label>For a formal event</label><br>
-      
-      <input type="button" value="Save your Apparel" onclick="addClothes.getFormData()" />
-      
+
+      <input type="button" value="Save your Apparel" />
+
     </form>
-    
+
     <form id="create-shoes">
       <h2>SHOES</h2>
       <label>Type of Shoes</label><br>
+      <input type="hidden" name="type" value="shoes" />
       <select name="model" id="modelShoes">
-        <option value="1" selected>Sandals</option>
-        <option value="2">Sneakers</option>
-        <option value="3">Boots</option>
-        <option value="4">Platform Pump</option>
-        <option value="5">Wedge Sandals</option>
-        <option value="6">Canvas Shoes</option>
+        <option value="sandals" selected>Sandals</option>
+        <option value="sneakers">Sneakers</option>
+        <option value="boots">Boots</option>
+        <option value="platform-pump">Platform Pump</option>
+        <option value="wedge-sandals">Wedge Sandals</option>
+        <option value="canvas-shoes">Canvas Shoes</option>
       </select><br>
-      
+
       <label>Color: </label><br>
       <input type="color" name="color"><br>
-      
+
       <label>What type of pattern does it have?</label><br>
       <input type="text" name="design"><br>
-      
+
       <label>Brand: </label><br>
-      <input type="text" name="brand"><br> 
-      
+      <input type="text" name="brand"><br>
+
       <label>How are the heels?</label><br>
       <input type="radio" value="no-heels" name="heels"><label>It does not have heels</label><br>
       <input type="radio" value="high-heels" name="heels"><label>It has high heels</label><br>
-      
+
       <label>When would you wear it?</label><br>
       <input type="checkbox"value="home" name="style"><label>At home</label><br>
       <input type="checkbox" value="work" name="style"><label>At work</label><br>
@@ -135,12 +137,16 @@
       <input type="checkbox" value="daylight-event" name="style"><label>For a daylight event</label><br>
       <input type="checkbox" value="night-event" name="style"><label>For a night event</label><br>
       <input type="checkbox" value="formal-event" name="style"><label>For a formal event</label><br>
-      
-      <input type="button" value="Save your Apparel" onclick="addClothes.getFormData()" />
-    
+
+      <input type="button" value="Save your Apparel"/>
+
     </form>
 
-    <script type="text/javascript" src="addClothes.js"></script>
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script src="config.js"></script>
+    <script>
+	    System.import("addClothes.js");
+    </script>
   </body>
-  
+
 </html>
