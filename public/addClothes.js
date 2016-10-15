@@ -27,7 +27,7 @@ System.import("jquery").then(function($) {
 
   function showValues() {
     var str = $('#' + lastCategorySelected).serialize();
-    $.post('/newClothes', str)
+    $.post('/clothes', str)
     .then(function(value){
       return str;
     });

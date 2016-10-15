@@ -4,7 +4,7 @@ System.import("jquery").then(function($) {
 
   function onFindClothes() {
     var criteria = getFormData();
-    $.post('/outfit', {criteria: criteria})
+    $.get('/outfit', {criteria: criteria})
     .then(function(outfit) {
       var resultElement = $('#outfit-result');
       resultElement.addClass('visible');

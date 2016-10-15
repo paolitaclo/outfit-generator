@@ -12,4 +12,13 @@ router.route('/')
     });
   });
 
+  router.route('/:type')
+    .get(function(req, res) {
+      var list = req.params.type;
+      var db = req.db;
+      clothesModel.showClothesList(db, list).then(function(result){
+        res.send(result)
+      });
+    });
+
 module.exports = router;

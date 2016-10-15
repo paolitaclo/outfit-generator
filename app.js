@@ -2,8 +2,7 @@ var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 var outfit = require('./routes/outfit');
-var newClothes = require('./routes/newClothes');
-var clothesList  = require('./routes/clothesList');
+var clothes = require('./routes/clothes');
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 
@@ -21,8 +20,7 @@ app.use('/node_modules', express.static(path.join(__dirname,
   '/node_modules/')));
 
 app.use('/outfit', outfit);
-app.use('/newClothes', newClothes);
-app.use('/clothesList', clothesList);
+app.use('/clothes', clothes);
 // Connection URL
 var url = 'mongodb://localhost:27017/outfit-generator';
 // Use connect method to connect to the server
